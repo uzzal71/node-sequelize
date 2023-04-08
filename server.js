@@ -1,5 +1,7 @@
 import bodyParser from 'body-parser';
+import 'dotenv/config';
 import express from 'express';
+import dbConnect from './config/db';
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -16,4 +18,5 @@ app.get('/', (req, res) => {
 
 app.listen(port, () => {
     console.log(`Server is running on http://locahost:${port}`);
+    dbConnect();
 });
