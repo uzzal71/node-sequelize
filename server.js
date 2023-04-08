@@ -1,7 +1,7 @@
 import bodyParser from 'body-parser';
 import 'dotenv/config';
 import express from 'express';
-import dbConnect from './config/db';
+import dbConnect from './dbConnect';
 
 const app = express();
 app.use(bodyParser.urlencoded({ extended: false }));

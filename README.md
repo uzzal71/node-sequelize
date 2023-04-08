@@ -2,6 +2,7 @@
 
 - [Introduction](#introduction)
 - [Installation](#installation)
+- [Model Defination](#model-defination)
 
 ## Introduction
 
@@ -65,3 +66,5 @@ npm install --save-dev nodemon
 npm install --save-dev esm
 npm install --save dotenv
 ```
+
+## Model Defination
